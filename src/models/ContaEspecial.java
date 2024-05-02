@@ -11,7 +11,7 @@ public class ContaEspecial extends ContaComum{
 
 
     public Long abrirConta(int senha, double limite){
-        abrirConta(senha);
+        super.abrirConta(senha);
         this.limiteConta = limite;
         return this.nroConta;
     }
